@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+         <title>Hotelzimmer buchen</title>
+        
+        <!-- CSS -->
+        
+        <link rel="stylesheet" href="bestellformular.css" type="text/css">
+       
+    </head>
+    
+     
+    
+    <body>
+        
+        
+        <script type="text/javascript" src="Bestellformular.js"></script>
+      
+        
+    
+        <!-- HTML -->
+        <h1 id="headline">Zimmer buchen</h1>
+            <form name="orderRoom" action="http://info.mi.hs-offenburg.de/~ivs/pfaerber/bestellformular.php" method="post" onsubmit="return checkOrder()">
+                <table>
+                    <tr>
+                        <td> weiblich <input type="radio" class="contact" name="gender" value="female"></td>
+                        <td> männich <input type="radio" class="contact" name="gender" value="male"></td>
+                    </tr>
+                    <tr><td><p id="checkGender"></p></td></tr>
+                    <tr>
+                        <td> <input class="contact" id="lastName" type ="text" name="lastName" placeholder="Name" onblur="checkLastName()"></td>
+                        <td> <input class="contact" id="firstName" type ="text" name="firstName" placeholder="Vorname" onblur="checkFirstName()"></td>
+                    </tr>
+                    <tr>
+                        <td><p class="check" id="checkLastName"></p></td>
+                        <td> <p class="check" id="checkFirstName"></p></td>
+                    
+                    </tr>
+                </table>
+                <div class="contact">
+                    
+                    
+                    
+                    
+                    <p class="contact"> Geburtsdatum </p>
+                    <select class="contact" name="day">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                    <select class="contact" name="month">
+                        <option>Januar</option>
+                        <option>Februar</option>
+                        <option>März</option>
+                        <option>April</option>
+                        <option>Mai</option>
+                        <option>Juni</option>
+                        <option>Juli</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>Oktober</option>
+                        <option>November</option>
+                        <option>Dezember</option>
+                    </select>
+                    <select class="contact" name="year">
+                        <option>2020</option>
+                        <option>2019</option>
+                        <option>2018</option>
+                        <option>2017</option>
+                        <option>2016</option>
+                        <option>2015</option>
+                        <option>2014</option>
+                        <option>2013</option>
+                        <option>2012</option>
+                        <option>2011</option>
+                        <option>2010</option>
+                        <option>2009</option>
+                        <option>2008</option>
+                        <option>2007</option>
+                        <option>2006</option>
+                        <option>2005</option>
+                        <option>2004</option>
+                        <option>2003</option>
+                        <option>2002</option>
+                        <option>2001</option>
+                        <option>2000</option>
+                        <option>1999</option>
+                        <option>1998</option>
+                        <option>1997</option>
+                        <option>1996</option>
+                        <option>1995</option>
+                        <option>1994</option>
+                        <option>1993</option>
+                        <option>1992</option>
+                        <option>1991</option>
+                        <option>1990</option>
+                    </select>
+                    <br>
+
+                </div> 
+                <div class="choose">
+                    <p class="contact">Hier können Sie sich eines unserer Zimmer aussuchen</p>
+                    <input type="radio" class="choose" name="room" value="landliebe"> Landliebe 
+                    <br>    
+                    <input type="radio" class="choose" name="room" value="bergluft"> Bergluft 
+                    <br>
+                    <input type="radio" class="choose" name="room" value="schlossgefuehle"> Schlossgefühle 
+                    <br>
+                    <p id="checkRoom"></p>
+                </div>
+                <div id="checkboxDiv">
+                    <input type="checkbox"  id="checkbox"> Ja, ich habe die Datenschutzgrundverordnung gelesen.            
+                </div>
+                    <button id="send" type="submit" name="buchen" onsubmit="return checkOrder()">Jetzt Zimmer buchen</button>
+            </form>
+        
+    </body>
+</html>
