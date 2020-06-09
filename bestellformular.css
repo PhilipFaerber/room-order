@@ -1,0 +1,39 @@
+        table{
+            margin: 5px;
+            padding: 15px;
+            font-family: sans-serif; 
+        }
+        .contact{
+            margin: 5px;
+            padding: 15px;
+            font-family: sans-serif;                
+        }
+        .choose{
+            margin: 5px;
+            padding: 15px;
+            font-family: sans-serif;  
+        }
+        #headline{
+            margin: 15px;
+            font-family: sans-serif;
+        }
+        #send{
+            background-color: rgb(255, 177, 53);
+            padding: 15px;
+            font-size: 20px;
+            margin-top: 15px;
+            color: white;
+            border-style: solid;
+            border-radius: 25px;
+        }
+        #send:hover{
+            background-color: rgb(253, 162, 4);
+        }
+        #checkbox{
+            padding-top: 10px;
+            font-family: sans-serif;                
+        }
+        #checkboxDiv{
+            font-family: sans-serif;
+            padding: 15px;
+        }
